@@ -603,6 +603,7 @@ function makeBaseUrl(host, protocol, apiKey) {
   if (protocol === 'http' || protocol === 'https' || protocol === 'ws' || protocol === 'wss') {
     url = protocol + '://';
     url += host;
+    url += '/chat/';
     if (url.charAt(url.length - 1) !== '/') {
       url += '/';
     }
